@@ -7,11 +7,20 @@
 // titlechange.style.fontWeight='bold'
 
 
-liList=document.getElementsByClassName('list-group-item')
-liList[2].style.backgroundColor='green'
+// liList=document.getElementsByClassName('list-group-item')
+// liList[2].style.backgroundColor='green'
 
-for(i=0;i<liList.length;i++)
-{
-    liList[i].style.fontWeight='bold'
+// for(i=0;i<liList.length;i++)
+// {
+//     liList[i].style.fontWeight='bold'
+// }
+// console.log(liList);
+
+newli=document.getElementById('myid')
+console.log(newli);
+newli.textContent='added li'
+
+newliclass=document.getElementsByClassName('mylist-group-item')
+for(i=0;i<newliclass.length;i++){
+newliclass[i].style.color='red'
 }
-console.log(liList);
