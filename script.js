@@ -16,11 +16,23 @@
 // }
 // console.log(liList);
 
-newli=document.getElementById('myid')
-console.log(newli);
-newli.textContent='added li'
+// newli=document.getElementById('myid')
+// console.log(newli);
+// newli.textContent='added li'
 
-newliclass=document.getElementsByClassName('mylist-group-item')
-for(i=0;i<newliclass.length;i++){
-newliclass[i].style.color='red'
-}
+// newliclass=document.getElementsByClassName('mylist-group-item')
+// for(i=0;i<newliclass.length;i++){
+// newliclass[i].style.color='red'
+// }
+
+queryli=document.querySelectorAll('.list-group-item')
+console.log(queryli);
+
+
+
+secondItem=document.querySelector('.list-group-item:nth-child(2)')
+
+secondItem.style.color='red'
+
+thirdItem=document.querySelector('.list-group-item:nth-child(2)')
+thirdItem.style='display:none'
