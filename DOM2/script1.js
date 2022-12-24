@@ -41,3 +41,27 @@ function removeItem(e)
       }
     }
 }
+
+//filter
+firstElement=document.getElementsByClassName('list-group-item')
+var filter=document.getElementById('filter')
+filter.addEventListener('keyup',filterItems)
+
+function filterItems(e)
+{
+inputText=e.target.value.toLowerCase()
+items=document.getElementsByTagName('li')
+xx=convertedToarray=Array.from(items)
+xx.forEach((item)=>{
+
+  mycontent =item.firstChild.textContent
+  console.log(mycontent);
+  if(mycontent.toLowerCase().includes(inputText))
+  {
+    item.style.display='block'
+  }else{
+    item.style.display='none'
+  }
+})
+// console.log(xx ); 
+}
