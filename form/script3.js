@@ -47,3 +47,4 @@ function showNewUserOnScreen(user)
     const childHTML=`<li>${user.name} -${user.email} </li>`
     parentNode.innerHTML=parentNode.innerHTML +childHTML
 }
+
