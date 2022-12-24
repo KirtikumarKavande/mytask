@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+          text-align: center;
+          color: orange;
+        }
+        h5 {
+          text-align: center;
+        }
+        .mainDiv {
+          width: 700px;
+          margin: auto;
+          border: 1px solid black;
+        }
+        input {
+          box-sizing: border-box;
+      width: 100%;
+      
+        }
+        
+          .float-child {
+      width: 50%;
+      float: left;
+      
+  }  
+  button{
+      box-sizing: border-box;
+      width: 100%;
+      background-color: orange;
+      color: white
+  }
+  /* .float-container {
+      border: 3px solid #fff;
+      padding: 20px;
+  } */
+        
+      </style>
+</head>
+<body>
+    <form action="" onsubmit=getValue(event)>
+     
+        <div class="mainDiv">
+          <h1>Book a call</h1>
+          <h5>
+            Book a call slot and our reprentative will call you within 1 hr of
+            selected time
+          </h5>
+          <hr />
+          <label for="">Name:</label>
+          <br>
+          <input  name="username" type="text" required>
+          <br>
+          <br>
+          <label for="">Email</label>
+          <br>
+          <input name="email" type="text" required>
+          <br>
+          <br>
+          <label for="">phone</label>
+          <input name="phone" type="text" name="phone" id="" required>
+          <br>
+          <br>
+          <label for="">Time to call</label>
+          <div >
+            <div  class="float-child"><input name="date" type="date"></div>
+            <div class="float-child"><input name="time" type="time"></div>
+          </div>
+          <br>
+          <button >Get a Call</button>
+    
+        </div>
+    </form>
+    <script src="./script3.js"></script>
+</body>
+</html>
