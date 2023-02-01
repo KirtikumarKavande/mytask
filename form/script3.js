@@ -51,7 +51,21 @@ showNewUserOnScreen(myobj)
 function showNewUserOnScreen(user)
 {
     parentNode=document.getElementById( 'listOfUsers' )
+   
     const childHTML=`<li>${user.name} -${user.email} </li>`
     parentNode.innerHTML=parentNode.innerHTML +childHTML
 }
+
+axios.get("https://crudcrud.com/api/56d6b523494341ac9c057ccde2988b79/appoinment")
+.then((res)=>{
+   res.data.map((a)=>{
+    parentNode=document.getElementById( 'listOfUsers' )
+
+    const childHTML=`<li>${a.name} -${a.email} </li>`
+    parentNode.innerHTML=parentNode.innerHTML +childHTML
+
+  
+
+   })
+})
 
