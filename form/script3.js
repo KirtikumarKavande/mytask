@@ -16,7 +16,14 @@ function getValue(event)
         time:event.target.time.value
     }
     
-    localStorage.setItem(myobj.email,JSON.stringify(myobj))
+    axios.post("https://crudcrud.com/api/56d6b523494341ac9c057ccde2988b79/appoinment",myobj)
+   .then((res)=>{
+console.log(res)
+   })
+   .catch((err)=>{
+    console.log(err)
+   })
+    // localStorage.setItem(myobj.email,JSON.stringify(myobj))
     
 // console.log(event.target.username.value)
 
